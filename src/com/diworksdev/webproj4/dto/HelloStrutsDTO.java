@@ -7,7 +7,7 @@ public class HelloStrutsDTO {
 	private String result;
 	
 	public int getUserId() {
-		return usreId;
+		return userId;
 	}
 	
 	public void setUserId(int userId) {
@@ -30,7 +30,7 @@ public class HelloStrutsDTO {
 		this.password = password;
 	}
 	
-	public String getRsult() {
+	public String getResult() {
 		return result;
 	}
 	

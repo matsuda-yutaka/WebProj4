@@ -16,7 +16,7 @@ public class HelloStrutsDAO {
 	
 	public List<HelloStrutsDTO> select() {
 		DBConnector db = new DBConnector();
-		Connection con = db.getConnection();
+		Connection con = db.getConnecion();
 		
 		String sql = "select * from users";
 		try {
@@ -24,7 +24,7 @@ public class HelloStrutsDAO {
 			ResultSet rs = ps.executeQuery();
 			
 			while(rs.next()) {
-				HelloStrutsDTO dto = new HelloStrutsDTO();
+				HelloStrutsDTO dto=new HelloStrutsDTO();
 				dto.setUserId(rs.getInt("user_id"));
 				dto.setUserName(rs.getString("user_name"));
 				dto.setPassword(rs.getString("password"));

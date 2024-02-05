@@ -7,14 +7,13 @@ import com.diworksdev.webproj4.dao.HelloStrutsDAO;
 import com.diworksdev.webproj4.dto.HelloStrutsDTO;
 import com.opensymphony.xwork2.ActionSupport;
 
-public class HelloStrutsAction extends.ActionSupport {
-	
+public class HelloStrutsAction extends ActionSupport {
 	private List<HelloStrutsDTO> HelloStrutsDTOList = new ArrayList<HelloStrutsDTO>();
 	
 	public String execute() {
 		String ret = ERROR;
 		
-		HelloStrutsDAO dao = new HelloStrutsDAO();
+		HelloStrutsDAO dao=new HelloStrutsDAO();
 		
 		HelloStrutsDTOList=dao.select();
 		
