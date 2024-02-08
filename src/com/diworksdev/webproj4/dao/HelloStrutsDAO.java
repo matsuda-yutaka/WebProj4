@@ -16,7 +16,7 @@ public class HelloStrutsDAO {
 	
 	public List<HelloStrutsDTO> select() {
 		DBConnector db = new DBConnector();
-		Connection con = db.getConnecion();
+		Connection con = db.getConnection();
 		
 		String sql = "select * from users";
 		try {

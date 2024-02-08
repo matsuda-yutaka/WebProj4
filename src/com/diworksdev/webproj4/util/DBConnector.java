@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnector {
 	/**
-	 * JDBC　ドラーバー名
+	 * JDBC　ドライバー名
 	 */
 	private static String driverName = "com.mysql.jdbc.Driver";
 	/**
@@ -22,7 +22,7 @@ public class DBConnector {
 	 */
 	private static String password = "root";
 	
-	public Connection getConnecion() {
+	public Connection getConnection() {
 		Connection con = null;
 		try {
 			Class.forName(driverName);
